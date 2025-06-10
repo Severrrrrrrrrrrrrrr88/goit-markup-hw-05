@@ -638,18 +638,18 @@ button {
   height: 100%;
   z-index: 999;
 
-  opacity: 0;
+  /* opacity: 0;
   pointer-events: none;
   transition: opacity 250ms ease-in-out;
-  /* display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center; */
 }
 
-.modal-overley.is-open {
+/* .modal-overley.is-open {
   opacity: 1;
   pointer-events: auto;
-}
+} */
 
 .modal {
   width: 408px;
