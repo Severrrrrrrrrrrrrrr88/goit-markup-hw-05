@@ -764,11 +764,15 @@ button {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8E8F99;
-   margin-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 .modal-field-comment {
   margin-bottom: 16px;
+}
+
+.modal-field-checkbox {
+  margin-bottom: 24px;
 }
 
 .modal-textarea {
@@ -782,6 +786,15 @@ button {
   padding: 8px 16px;
   outline: transparent;
   resize: none;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.modal-textarea:hover {
+  border-color: #4D5AE5;
 }
 
 .overley-btn {
@@ -804,6 +817,7 @@ button {
   letter-spacing: 0.04em;
   text-align: center;
   color: #ffffff;
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .check-text { 
   font-size: 12px;
@@ -828,13 +842,16 @@ button {
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   margin-right: 12px;
-  display: flex;
+  
   align-items: center;
   justify-content: center;
   fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
 }
 
 .modal-check:checked + .check-text .check-element {
   background-color: #404BBF;
   fill: #F4F4FD;
+  border: none;
 }
